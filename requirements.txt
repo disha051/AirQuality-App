@@ -12,7 +12,6 @@ fonttools
 gitdb
 GitPython
 idna
-importlib_resources
 Jinja2
 joblib
 jsonschema
@@ -46,7 +45,6 @@ streamlit
 tenacity
 threadpoolctl
 toml
-toolz
 tornado
 typing_extensions
 tzdata
