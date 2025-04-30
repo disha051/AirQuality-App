@@ -21,7 +21,7 @@ def make_prediction(model, feature_set):
 mreg = pickle.load(open("Models/Multiple Regression.pkl", 'rb'))
 preg = pickle.load(open("Models/pregression.pkl", 'rb'))
 dec_tree = pickle.load(open("Models/Decision tree.pkl", 'rb'))
-rt_reg = pickle.load(open("Models/RandomForest.pkl", 'rb'))
+#rt_reg = pickle.load(open("Models/RandomForest.pkl", 'rb'))
 svr_reg = pickle.load(open("Models/svrression.pkl", 'rb'))
 poly_reg = pickle.load(open("Models/ploy_reg.pkl", "rb"))
 
@@ -64,8 +64,8 @@ if predict_button:
         y_predict = round(float(y_predict), 2)
     elif selected_model == 'Decision Tree':
         y_predict = make_prediction(dec_tree, feature_set)
-    elif selected_model == 'Random Forest':
-        y_predict = make_prediction(rt_reg, feature_set)
+    #elif selected_model == 'Random Forest':
+        #y_predict = make_prediction(rt_reg, feature_set)
     elif selected_model == 'SVR':
         y_predict = make_prediction(svr_reg, feature_set)
 
