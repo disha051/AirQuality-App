@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 
 # Load the dataset
-data = pd.read_csv('Data/city_day.csv')
+data = pd.read_csv('city_day.csv')
 
 # Set page title
 st.set_page_config(page_title='Air Quality Dashboard')
